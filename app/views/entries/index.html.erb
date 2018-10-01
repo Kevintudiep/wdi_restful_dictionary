@@ -1,1 +1,7 @@
 <h1>This is the entries index page</h1>
+
+
+
+<% @entries.each do |current_entry| %>
+  <%= render 'single_entry', entry: current_entry %>
+<% end %>
