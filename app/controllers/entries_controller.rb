@@ -12,17 +12,17 @@ class EntriesController < ApplicationController
   def new
     @entry = Entry.new
     @entry.word = params([:entry][:word])
-    @entry.definition = params([:entry][:definition)
+    @entry.definition = params([:entry][:definition])
     @entry.language = params([:entry][:language])
-    render :new
   end
 
+
   def create
-    @entry = Entry.Create
-    @entry = Entry.new
-    @entry.word = params([:entry][:word])
-    @entry.definition = params([:entry][:definition)
-    @entry.language = params([:entry][:language])
+    # @entry = Entry.Create
+    # @entry = Entry.new
+    # @entry.word = params([:entry][:word])
+    # @entry.definition = params([:entry][:definition])
+    # @entry.language = params([:entry][:language])
     redirect_to entries_url
   end
 

@@ -1,6 +1,6 @@
 <h1> hi this is a random dictionary word <%= params[:id] %></h1>
 <%= link_to 'Back to home page', root_path  %>
 
-
+<%= link_to 'Edit Word', edit_entry_path %> | <%= link_to 'Delete Word', "#" %>
 
 <%= render 'single_entry', entry: @entry %>

@@ -1,1 +1,23 @@
 <h1>the new entry will go here later!</h1>
+<%= link_to 'Back to home page', root_path  %>
+
+<%= form_for(@entry) do |f| %>
+ <div class="">
+   <%= f.label :word %>
+   <%= f.text_field :word %>
+ </div>
+
+ <div class="">
+   <%= f.label :definition %>
+   <%= f.text_field :definition %>
+ </div>
+
+ <div class="">
+   <%= f.label :language %>
+   <%= f.text_field :language %>
+ </div>
+
+ <div class="">
+   <%= f.submit %>
+ </div>
+<% end %>
