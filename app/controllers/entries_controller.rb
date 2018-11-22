@@ -44,7 +44,9 @@ class EntriesController < ApplicationController
   end
 
   def destroy
-    redirect_to :index
+    @entry = Entry.find(params[:id])
+    @entry.destroy
+    redirect_to root_url
   end
 
 end
