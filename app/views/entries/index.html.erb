@@ -1,6 +1,6 @@
 <h1>This is the entries index page</h1>
 
-
+<%= link_to('Enter a new word', new_entry_path) %>
 
 <% @entries.each do |current_entry| %>
   <%= render 'single_entry', entry: current_entry %>
